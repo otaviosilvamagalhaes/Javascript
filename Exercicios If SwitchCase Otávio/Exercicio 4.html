@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Exercicio 4</title>
+
+    <script type="text/javascript">
+    altu = parseFloat(prompt("Digite sua altura em metros"));
+    peso = parseFloat(prompt("Digite seu peso"));
+    sexo = parseInt(prompt("Digite 1 para homem e 2 para mulher"));
+
+        switch (sexo){
+
+            case 1:
+
+                ideal = ((72.7*altu)-58);
+                resul = (ideal - peso);
+
+            if (resul >3) {
+                alert("Você está abaixo do peso engorde" + resul)
+            }
+        
+            else if (resul <3) {
+                alert("Você está acima do peso emagreça" + resul)
+            }
+
+            else{
+                alert("Você está no peso ideal" + resul)
+            }
+
+                break
+
+         case 2:
+                
+                ideal = ((62.1*altu)-44.7);
+                resul = (ideal - peso);
+                
+            if (resul >3){
+                alert("Você está acima do peso emagreça" + resul)
+            }
+
+           else if (result <3){
+                alert("Você está abaixo do peso engorde" + resul)
+            }
+
+            else{
+                alert("Você está no peso ideal" + resul)    
+            }
+
+                break
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

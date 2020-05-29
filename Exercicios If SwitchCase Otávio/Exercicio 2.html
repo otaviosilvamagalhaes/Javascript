@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+
+    <script>
+        hora = parseInt(prompt("Digite quantas horas de trabalho você trabalhou"))
+        codigo = prompt("Digite seu codigo de funcionário")
+
+        if (hora>50) {
+            excesso = (hora - 50)
+            bruto = (hora - excesso)
+            salario = ((bruto *10) + (excesso * 20))
+
+            alert("O salário do funcionario com o codigo " + codigo + " é de = R$ " + salario)
+        }
+        else{
+            salario = (hora * 10)
+            alert("O salário do funcionario com o codigo " + codigo + " é de = R$ " + salario)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
